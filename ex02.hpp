@@ -24,7 +24,7 @@ string ex2(int l, int w) {
     // out2.clear();
     // Rectangle rect;
     // out2 << "Area: " << rect.getArea(l, w) << endl;
-    // out2 << "Area: " << rect.getPerimeter(l, w) << endl;
+    // out2 << "Perimeter: " << rect.getPerimeter(l, w) << endl;
     // return out2.str();
     return "WHEN YOU'RE READY REMOVE THIS LINE & UNCOMMENT THE BLOCK OF STATEMENTS ABOVE";
 
