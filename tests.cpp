@@ -18,7 +18,7 @@ std::string TestCase11(){
 std::string TestCase12(){
    return "Hello, Flower!\nHello, Rose!\nBloom time: Summer\nFragrance: Rose\n";
 }
-TEST_CASE("Ex1", "[example]")
+TEST_CASE("Ex01", "[example]")
 {
     REQUIRE(ex1("Summer", "Rose") == TestCase11());
     REQUIRE(ex1("$pring", "Ro$e") == TestCase12());
