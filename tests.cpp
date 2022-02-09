@@ -5,55 +5,41 @@
 #define CATCH_CONFIG_MAIN // defines main() automatically
 #include "catch.hpp"
 
-#include "lab02.hpp" // student implementations
+#include "lab04.hpp" // student implementations
 std::ostringstream out;
 
 // =====================
 // tests for exercise 1
 // ---------------------
 
-TEST_CASE("Ex00_a", "[example]")
+std::string TestCase11(){
+   return "Hello, Flower!\nHello, Rose!\nBloom time: Summer\nFragrance: Rose\n";
+}
+std::string TestCase12(){
+   return "Hello, Flower!\nHello, Rose!\nBloom time: Summer\nFragrance: Rose\n";
+}
+TEST_CASE("Ex1", "[example]")
 {
-    REQUIRE(add(1,1) == 2);
+    REQUIRE(ex1("Summer", "Rose") == TestCase11());
+    REQUIRE(ex1("$pring", "Ro$e") == TestCase12());
 }
 
 // =====================
 // tests for exercise 2
 // ---------------------
 
-TEST_CASE("Ex00_b", "[example]")
-{
-    REQUIRE(mul(3,3) == 9);
+std::string TestCase21 () {
+   return "Area: 40000\nPerimeter: 80002\n";
 }
 
-std::string TestCase1 () {
-   int a[7]{ 1, 3, 5, 4, 2, 7, -1 };
-   int *p = nullptr;
-
-   p = &a[2];
-   out << "x = " << a[2] << ", *y = " << *p << endl;
-   *p = *p + a[4];
-   out << "x = " << a[2] << ", *y = " << *p << endl;
-   *p = *p - a[4];
-   *p = *p + a[5];
-   out << "x = " << a[2] << ", *y = " << *p << endl;
-
-   return out.str();
+std::string TestCase22 () {
+   return "Area: 28\nPerimeter: 22\n";
 }
-
-TEST_CASE("Ex01", "[exercise]") {
-
-//    REQUIRE("*p = 5 (), a[2] = 5\np[3] = 9, a[5] = 9\n" == TestCase());
-   REQUIRE(ex1() == TestCase1());
+std::string TestCase23 () {
+   return "Area: 1131\nPerimeter: 200\n";
 }
-
-
-
-std::string TestCase2 () {    
-   return "16 8\nHello. I am Spider Man. I am a hero.\nHello. I am The Joker. I am a villain.\nHello. I am Doctor Octopus. I am a villain.\nHello. I am Thor. I am a hero.\nHello. I am Batman. I am a hero.\nHello. I am Loki. I am a villain.\n";
-}
-
-TEST_CASE("Ex02", "exercise") {
-
-   REQUIRE(ex2() == TestCase2());
+TEST_CASE("Ex02", "[exercise]") {
+   REQUIRE(ex2(1, 40000) == TestCase21());
+   REQUIRE(ex2(7, 4) == TestCase22());
+   REQUIRE(ex2(13, 87) == TestCase23());
 }

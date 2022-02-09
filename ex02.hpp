@@ -1,48 +1,31 @@
+#pragma once // prevents multiple definitions
+
 #include <iostream>
 #include <string>  
 #include <sstream>
+
+std::ostringstream out2;
 using namespace std;
 
-// Exercise 2
-string ex2();
+/*Goal: practice multiple inheritance
+** Use Multiple inheritance Concept to calculate the Perimeter and Area of Rectangle.
+** Important: Perimeter and Area MUST be classes: have public methodsgetArea() and getPerimeter() .
+**--------------------------------------------------------
+** *****************Important*****************************
+** WHEN YOU'RE READY, GO to ex2(int, int), REMOVE THE TEMP return STATEMENT
+** & UNCOMMENT THE BLOCK OF STATEMENTS INSIDE THE FUNCTION.
+*/
 
-struct mydata
-{
-   char const* name_;
-   bool hero_;
-};
-mydata heroes[]
-{
-   { "Spider Man", true },
-{ "The Joker", false },
-{ "Doctor Octopus", false },
-{ "Thor", true },
-{ "Batman", true },
-{ "Loki", false }
-};
+// Put your code here
 
-string printdata(mydata* p)
-{
-   stringstream buffer;
-   string name = "";// TODO: assign the const name_ in p to the variable name;
-   buffer << "Hello. I am " << name << ". ";
-   if (true)// TODO: if p is a hero
-      buffer << "I am a hero." << endl;
-   else
-      buffer << "I am a villain." << endl;
-   return buffer.str();
-}
 
-string ex2(){
-   stringstream buffer;
-   buffer << sizeof(mydata) << " " << sizeof(mydata*) << endl;
+string ex2(int l, int w) {
+    // out2.str("");
+    // out2.clear();
+    // Rectangle rect;
+    // out2 << "Area: " << rect.getArea(l, w) << endl;
+    // out2 << "Area: " << rect.getPerimeter(l, w) << endl;
+    // return out2.str();
+    return "WHEN YOU'RE READY REMOVE THIS LINE & UNCOMMENT THE BLOCK OF STATEMENTS ABOVE";
 
-   // Use a For Loop to call our printdata(mydata*) function
-   // over all our heroes[]  
-   for (; ;) // TODO: fix as descripted in the comment right above
-   {
-      buffer << printdata(p);
-   }
-
-   return buffer.str();
 }
