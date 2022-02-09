@@ -8,4 +8,4 @@
 
 
 
-Attetnion, Only change code in the above mntion files, otherwise you might run into troubles, and you haave to fix it not TA.
+Attetnion, Only change code in the above mntion files, otherwise you might run into troubles, and you have to fix it not TA.
