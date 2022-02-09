@@ -1,3 +1,5 @@
+## Full name: John Smith
+## Email: mail@innopolis.university
 ## Instructions
 
 - Solve the questions on the folowing files :
