@@ -16,7 +16,7 @@ std::string TestCase11(){
    return "Hello, Flower!\nHello, Rose!\nBloom time: Summer\nFragrance: Rose\n";
 }
 std::string TestCase12(){
-   return "Hello, Flower!\nHello, Rose!\nBloom time: Summer\nFragrance: Rose\n";
+   return "Hello, Flower!\nHello, Rose!\nBloom time: $pring\nFragrance: Ro$e\n";
 }
 TEST_CASE("Ex01", "[example]")
 {
