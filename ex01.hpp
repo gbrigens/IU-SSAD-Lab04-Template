@@ -37,6 +37,7 @@ std::string ex1(string bloomtime, string fragrance) {
    // rose.print_bloomtime();
    // rose.print_fragrance();
    // return out1.str();
+   ..
    
    return "WHEN YOU'RE READY REMOVE THIS LINE & UNCOMMENT THE BLOCK OF STATEMENTS ABOVE";
 }
